@@ -121,7 +121,7 @@
 		}
 		
 		var formattedMessage = "Hola, soy " + name + ". Mi correo es " + email + ". Mi mensaje es: " + message;
-		var whatsappURL = "https://wa.me/send?phone=3323738000&text=" + encodeURIComponent(formattedMessage);
+		var whatsappURL = "https://api.whatsapp.com/send?phone=3323738000&text=" + encodeURIComponent(formattedMessage);
 		window.open(whatsappURL, "_blank");
 		
 		return true; // Permite enviar el formulario si todos los campos están completos
